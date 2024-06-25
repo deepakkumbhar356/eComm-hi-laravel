@@ -16,15 +16,15 @@
     {{ view::make('footer') }}
      --}}
 
-     {{-- {!! view('header') !!}
-@yield('content')
-{!! view('footer') !!} --}}
+     {!! view('header') !!}
+     @yield('content')
+     {!! view('footer') !!}
+     
 </body>
-<script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            alert("all set")
-        })
-    })
-</script>
+ <style>
+    .custom-login{
+        height: 500px;
+        padding-top: 100px;
+    }
+ </style>
 </html>
